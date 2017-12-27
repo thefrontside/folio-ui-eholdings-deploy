@@ -17,12 +17,12 @@ before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.1.0
   - export PATH=$HOME/.yarn/bin:$PATH
 install:
-  - yarn
   # Clone the repository with specified GIT SHA
   # This eventually needs to be replaced with FOLIO URL after transfer of ownership
   - git clone --branch=master https://github.com/thefrontside/ui-eholdings.git
   - cd ui-eholdings
   - git checkout $GIT_SHA
+  - yarn
 
 cache:
   yarn: true
