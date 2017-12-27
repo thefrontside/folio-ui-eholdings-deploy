@@ -4,6 +4,7 @@ language: node_js
 env:
   - BROWSER=Chrome_travis_ci
   - BROWSER=bs_safari_11
+  - GIT_SHA=006363d351cb8099d1694243cf75760e1893324f
 matrix:
   allow_failures:
     - env: BROWSER=bs_safari_11
@@ -21,7 +22,7 @@ install:
   # This eventually needs to be replaced with FOLIO URL after transfer of ownership
   - git clone --branch=master https://github.com/thefrontside/ui-eholdings.git
   - cd ui-eholdings
-  - bundle install
+  - git checkout $GIT_SHA
 
 cache:
   yarn: true
