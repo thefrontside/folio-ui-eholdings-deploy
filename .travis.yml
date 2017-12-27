@@ -4,8 +4,9 @@ language: node_js
 env:
   - BROWSER=Chrome_travis_ci
   - BROWSER=bs_safari_11
-  - TRAVIS_REPO_SLUG=ui-eholdings
-  - TRAVIS_COMMIT=006363d351cb8099d1694243cf75760e1893324f # This SHA needs to be replaced with the actual GIT SHA
+  - GIT_REPO_FROM=ui-eholdings
+  - TRAVIS_REPO_TO=ui-eholdings-deploy
+  - GIT_COMMIT=006363d351cb8099d1694243cf75760e1893324f # This SHA needs to be replaced with the actual GIT SHA
 matrix:
   allow_failures:
     - env: BROWSER=bs_safari_11
@@ -21,9 +22,9 @@ install:
   - yarn
   # Clone the repository with specified GIT SHA
   # This eventually needs to be replaced with FOLIO URL after transfer of ownership
-  - git clone https://github.com/thefrontside/$TRAVIS_REPO_SLUG.git $TRAVIS_REPO_SLUG
-  - cd $TRAVIS_REPO_SLUG
-  - git checkout -qf $TRAVIS_COMMIT
+  - git clone https://github.com/thefrontside/$GIT_REPO_FROM.git $TRAVIS_REPO_TO
+  - cd $TRAVIS_REPO_TO
+  - git checkout -qf $GIT_COMMIT
 
 cache:
   yarn: true
