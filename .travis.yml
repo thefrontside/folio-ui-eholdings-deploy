@@ -5,7 +5,7 @@ env:
   - BROWSER=Chrome_travis_ci
   - BROWSER=bs_safari_11
   - TRAVIS_REPO_SLUG=ui-eholdings
-  - TRAVIS_COMMIT=SHA # This SHA needs to be replaced with the actual GIT SHA
+  - TRAVIS_COMMIT=006363d351cb8099d1694243cf75760e1893324f # This SHA needs to be replaced with the actual GIT SHA
 matrix:
   allow_failures:
     - env: BROWSER=bs_safari_11
