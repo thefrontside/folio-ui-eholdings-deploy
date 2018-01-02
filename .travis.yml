@@ -22,6 +22,7 @@ cache:
   yarn: true
 script:
   - yarn lint
+  - yarn test --single-run --browsers=Chrome_travis_ci
 before_deploy:
   - NODE_ENV=production yarn build
 deploy:
