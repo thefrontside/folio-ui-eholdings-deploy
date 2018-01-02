@@ -2,9 +2,8 @@ sudo: false
 dist: trusty
 language: node_js
 env:
-  - BROWSER=Chrome_travis_ci
-  - BROWSER=bs_safari_11
-  - GIT_SHA=006363d351cb8099d1694243cf75760e1893324f # This git sha needs to be replaced dynamically
+  - BROWSER=Chrome_travis_ci GIT_SHA=006363d351cb8099d1694243cf75760e1893324f
+  - BROWSER=bs_safari_11 GIT_SHA=006363d351cb8099d1694243cf75760e1893324f
 matrix:
   allow_failures:
     - env: BROWSER=bs_safari_11
