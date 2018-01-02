@@ -18,7 +18,6 @@ install:
   - cd ui-eholdings
   - git checkout $GIT_SHA
   - yarn
-
 cache:
   yarn: true
 script:
@@ -30,9 +29,10 @@ deploy:
   acl: public_read
   cache_control: max-age=30
   # These access keys should not be exposed in Git checkins
-  access_key_id: AKIAJS2B2FMG7GS4E5MA
+  # Use `travis encrypt...` before committing
+  access_key_id: AKIAJPCMT5BOKFDIIAQQ
   secret_access_key:
-    secure: cWmzSE8PWpolL/yY92EvAemSxpnsO7B1Bqf+wC1AeeRjGvETwKbyzlUOvQGQuEEe27ja4mMyVcQLy5WHvgqpiarg492e7qqj4N7t7UlmFPULHbdWsGHLH/WxSIQ8erz/d08lP2tn18As4dOAGDXTlslfX946ZgB6c4mt5vVq02UiTFXTAcFGTs38/fAkY36CUKt5O28vcokS56wf5NqVR9cm49r7eOUQfQHoKvODr3pqGL63trgztQfUGm+Vpyp2j7Gd3ly5CK8+iN9pb4afQHfmNDlzUagGJWfR7Y8TwnTeGjYw8TNhnx+/MM1Uk/BTKKHJ5vpBZg5EMOk/reB4cs9Uin+KR0KiBG8DBOpPmJb+PtF9tmXScqf+jqcBZGIeI8cOknbyxk2J/ObhVFddErW2QuQcMS14ZzDzv5V/WVgEtqPAHGRAdSxQxfIz9TJjzeLjwa/Zz/gm9C29vkTmhZTaL+iRpTxN/f3cUhtmqpe0DOfzBZc0cCWK8Q/bA90ImKmOmeQwUUXOnxTsu23NOQIVSx57fxN9AxFYFoLYR6SPOKxrXiZswN8w6X0yf1SryOcSn6RPdnfBakFWVkx7sRAzW+3l4R4+bQ/klJ5y5wGrYWKtsxsb56klG4x8xIP6em7Bnlre8U10ck518y3YIzFv6YFIdj0w3MgNY06im1g=
+    secure: Xo5FZNOwM0wSd5l0qeFwr1Kt9qYFhWwbSu3PsPFSoxIQZAK4lmmXNPOnl92dQKYPLHGOz5CYOvT25iWgK/0e2IA0G1basYei6MBLrsmZGDwVuq3jDrb6FUiBXmjoe9W9y/y7qLgeaov3i507i4lt80beX3owKs6c38NZZELpl1NdPFjg2r9MQqjHBBuL5/96mInbWmco2eeqzs/4dyqxkYnyeOdJlWypb8tWRSytbb2pnZ/QELXRNcBl7Ax5AlCGqxATOGTGDnbHgIKrUNf8to/cs8xDlEBli2Vn80aUJ4XG9ekN6+LEWZjj/BCVd7ZUzCWHJnXralOUjpS10mbmfws6Z/jYTv/I55j4m834k+/1TaWQhHsOF25nj3+GKSFg0Ic+cjJYbAofFw0z6Hp3xrLex7xILcZxKmSHpcwfanTRDIHrvo7q0JuySu0BeAwZhtXnVmPg98zMRwntMO8Sk78RC8QbdBZqUl82UD7WaKLuH5Y/zHabcqOT2r3Jv6vjrPKM0wPeZ1Bq7eT4yVBZxogG9UoUbmbLbc17DC4WH+8Pe3/bGBophRkFCGPuBil+E2EHL6OTy+CdM5kjFbLg1DaPfKFm5sOy9+DNZypAzcKkP277MngkfFj53LZmbTzGv/LLWXfRV9/WVW0kldVkOw76A2NZqT0GXshJNIYduPo=
   bucket: folio.frontside.io
   region: us-east-2
   skip_cleanup: true
