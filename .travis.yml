@@ -18,7 +18,7 @@ before_install:
 install:
   # Clone the repository with specified GIT SHA
   # This eventually needs to be replaced with FOLIO URL after transfer of ownership
-  - git clone --branch=master https://github.com/thefrontside/ui-eholdings.git
+  - git clone --branch=master https://github.com/folio-org/ui-eholdings.git
   - cd ui-eholdings
   - yarn
 cache:
