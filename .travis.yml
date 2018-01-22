@@ -25,7 +25,7 @@ cache:
   yarn: true
 script:
   - yarn lint
-  - yarn test --single-run --browsers=$BROWSER
+  - yarn test --karma.singleRun --karma.browsers=$BROWSER
 before_deploy:
   - NODE_ENV=production yarn build
 deploy:
