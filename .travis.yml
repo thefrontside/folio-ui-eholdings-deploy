@@ -24,8 +24,7 @@ install:
 cache:
   yarn: true
 script:
-  - yarn lint
-  - yarn test --karma.singleRun --karma.browsers=$BROWSER
+  - echo "Test for the Deployment itself should go here."
 before_deploy:
   - NODE_ENV=production yarn build
 deploy:
