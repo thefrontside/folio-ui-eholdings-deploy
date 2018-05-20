@@ -1,0 +1,12 @@
+{
+  "name": "folio-ui-eholdings-deploy",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "stripes serve stripes.config.js",
+    "build": "stripes build stripes.config.js dist"
+  },
+  "dependencies": {
+    "@folio/eholdings": "git+https://git@github.com/folio-org/ui-eholdings.git#master",
+    "@folio/stripes-cli": "^1.2.0"
+  }
+}
