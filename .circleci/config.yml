@@ -3,28 +3,25 @@ jobs:
   build:
     docker:
       - image: circleci/node:9
-    working_directory: ~/ui-eholdings
-    branches:
-      only:
-        - master
     steps:
+      - checkout
       - run:
-          name: Check Out Repository
-          command: |
-            cd ~/
-            git clone --branch=master https://github.com/folio-org/ui-eholdings.git
-      - run:
-          name: Install Dependencies
+          name: Install dependencies
           command: yarn install
       - run:
-          name: Build Bundle
+          name: Build bundle
           command: NODE_ENV=production yarn build
       - run:
           name: Install AWS CLI
           command: |
-            sudo apt-get update && sudo apt-get install -qq -y python-pip libpython-dev
-            curl -O https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
-            sudo pip install -q awscli --upgrade
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              sudo apt-get update && sudo apt-get install -qq -y python-pip libpython-dev
+              curl -O https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
+              sudo pip install -q awscli --upgrade
+            fi
       - run:
           name: Deploy to S3
-          command: aws s3 sync dist s3://folio.frontside.io/ --acl public-read --cache-control max-age=30
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              aws s3 sync dist s3://folio.frontside.io/ --acl public-read --cache-control max-age=30
+            fi
