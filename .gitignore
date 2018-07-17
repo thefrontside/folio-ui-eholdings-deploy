@@ -2,5 +2,4 @@ node_modules
 dist/*
 .vscode
 .DS_STORE
-yarn.lock
 /yarn-error.log
