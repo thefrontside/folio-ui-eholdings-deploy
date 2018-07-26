@@ -9,6 +9,9 @@ jobs:
           name: Install dependencies
           command: yarn install
       - run:
+          name: Get latest ui-eholdings
+          command: yarn upgrade @folio/eholdings
+      - run:
           name: Build bundle
           command: NODE_ENV=production yarn build
       - run:
