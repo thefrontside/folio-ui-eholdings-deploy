@@ -80,9 +80,9 @@
 
 "@folio/eholdings@git+https://git@github.com/folio-org/ui-eholdings.git#master":
   version "0.1.0"
-  resolved "git+https://git@github.com/folio-org/ui-eholdings.git#8d48e987ee788c92fcd113f28e0552dee9631e90"
+  resolved "git+https://git@github.com/folio-org/ui-eholdings.git#63390bfaa3bd996c82669c251e732863c3bd86f4"
   dependencies:
-    "@folio/stripes-components" "3.0.1000442"
+    "@folio/stripes-components" "3.0.4000452"
     classnames "^2.2.5"
     funcadelic "^0.4.0"
     impagination "^1.0.0-alpha.3"
@@ -97,8 +97,8 @@
     sanitize-html "^1.18.2"
 
 "@folio/stripes-cli@^1.2.0":
-  version "1.2.100090"
-  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-cli/-/stripes-cli-1.2.100090.tgz#07f0b41c08760d28ab2ebb8810e12937795d5914"
+  version "1.2.100094"
+  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-cli/-/stripes-cli-1.2.100094.tgz#3390aa5ca5b3908e3a1a4e8d61fe63060fa277b7"
   dependencies:
     "@folio/stripes-core" "^2.10.0"
     "@folio/ui-testing" folio-org/ui-testing#framework-only
@@ -137,67 +137,9 @@
     webpack-bundle-analyzer "^2.9.1"
     yargs "^10.0.3"
 
-"@folio/stripes-components@3.0.1000442":
-  version "3.0.1000442"
-  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-components/-/stripes-components-3.0.1000442.tgz#21170f1ae965f73a7f6955909a246f2355ff66e5"
-  dependencies:
-    "@folio/stripes-connect" "^3.1.3"
-    "@folio/stripes-form" "^0.8.2"
-    "@folio/stripes-react-hotkeys" "^1.0.0"
-    classnames "^2.2.5"
-    dom-helpers "^3.2.1"
-    lodash "^4.17.4"
-    moment "^2.17.1"
-    moment-range "^3.0.3"
-    moment-timezone "^0.5.14"
-    normalize.css "^7.0.0"
-    prop-types "^15.5.10"
-    prop-types-extra "^1.0.1"
-    query-string "^6.1.0"
-    react-flexbox-grid "1.1.3"
-    react-highlighter "^0.4.2"
-    react-intl "^2.4.0"
-    react-overlays "^0.8.3"
-    react-redux "^5.0.2"
-    react-router-dom "^4.1.1"
-    react-tether "^0.6.1"
-    react-transition-group "^2.2.1"
-    redux "^3.6.0"
-    redux-form "^7.0.3"
-    typeface-source-sans-pro "^0.0.44"
-
-"@folio/stripes-components@^2.0.0":
-  version "2.1.8000425"
-  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-components/-/stripes-components-2.1.8000425.tgz#97b459db2983b58478c3d706d751114d5d227439"
-  dependencies:
-    "@folio/stripes-connect" "^3.1.3"
-    "@folio/stripes-form" "^0.8.2"
-    "@folio/stripes-react-hotkeys" "^1.0.0"
-    classnames "^2.2.5"
-    dom-helpers "^3.2.1"
-    lodash "^4.17.4"
-    moment "^2.17.1"
-    moment-range "^3.0.3"
-    moment-timezone "^0.5.14"
-    normalize.css "^7.0.0"
-    prop-types "^15.5.10"
-    prop-types-extra "^1.0.1"
-    query-string "^6.1.0"
-    react-flexbox-grid "1.1.3"
-    react-highlighter "^0.4.2"
-    react-intl "^2.4.0"
-    react-overlays "^0.8.3"
-    react-redux "^5.0.2"
-    react-router-dom "^4.1.1"
-    react-tether "^0.6.1"
-    react-transition-group "^2.2.1"
-    redux "^3.6.0"
-    redux-form "^7.0.3"
-    typeface-source-sans-pro "^0.0.44"
-
-"@folio/stripes-components@^3.0.0":
-  version "3.0.4000450"
-  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-components/-/stripes-components-3.0.4000450.tgz#519fb7bc5e63763c31ab196638371473710b5795"
+"@folio/stripes-components@3.0.4000452", "@folio/stripes-components@^3.0.0":
+  version "3.0.4000452"
+  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-components/-/stripes-components-3.0.4000452.tgz#a07ed79f8d237a99be7b9dfbb9219683241edca3"
   dependencies:
     "@folio/stripes-connect" "^3.1.3"
     "@folio/stripes-form" "^0.8.2"
@@ -225,8 +167,8 @@
     typeface-source-sans-pro "^0.0.44"
 
 "@folio/stripes-connect@^3.1.2", "@folio/stripes-connect@^3.1.3":
-  version "3.1.300043"
-  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-connect/-/stripes-connect-3.1.300043.tgz#5e47e8acb6b461baedda50e00e0e35c49fa6b456"
+  version "3.1.300045"
+  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-connect/-/stripes-connect-3.1.300045.tgz#8a9b51da675eb845c6418d19f6ea040d6e17c934"
   dependencies:
     isomorphic-fetch "^2.2.1"
     lodash "^4.17.2"
@@ -238,8 +180,8 @@
     uuid "^3.0.1"
 
 "@folio/stripes-core@^2.10.0":
-  version "2.10.3000311"
-  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-core/-/stripes-core-2.10.3000311.tgz#6ca5d6983b50d12c40d5279eb915a335febace97"
+  version "2.10.4000316"
+  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-core/-/stripes-core-2.10.4000316.tgz#11d3179442527759231ac754bdf1ccc191534569"
   dependencies:
     "@folio/react-intl-safe-html" "^1.0.1"
     "@folio/stripes-components" "^3.0.0"
@@ -324,10 +266,10 @@
     webpack-virtual-modules "^0.1.10"
 
 "@folio/stripes-form@^0.8.2":
-  version "0.8.200023"
-  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-form/-/stripes-form-0.8.200023.tgz#fdca84fd53a4ec908859031a55e612860c72adbb"
+  version "0.8.200024"
+  resolved "https://repository.folio.org/repository/npm-folioci/@folio/stripes-form/-/stripes-form-0.8.200024.tgz#8a21a1e0580b9dd11a54e188fea93f901480e954"
   dependencies:
-    "@folio/stripes-components" "^2.0.0"
+    "@folio/stripes-components" "^3.0.0"
     flat "^4.0.0"
     prop-types "^15.5.10"
     react-intl "^2.4.0"
@@ -349,7 +291,7 @@
 
 "@folio/ui-testing@github:folio-org/ui-testing#framework-only":
   version "4.0.0"
-  resolved "https://codeload.github.com/folio-org/ui-testing/tar.gz/41c0beb5dbfd450538cfd2624a43cac519b35388"
+  resolved "https://codeload.github.com/folio-org/ui-testing/tar.gz/dff127ffed588deb5344a5fb2d74dfffdc18a9d3"
   dependencies:
     debug "^3.1.0"
     electron "2.0.0"
@@ -368,8 +310,8 @@
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.12.6.tgz#3d619198585fcabe5f4e1adfb5cf5f3388c66c13"
 
 "@types/node@^8.0.24":
-  version "8.10.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.21.tgz#12b3f2359b27aa05a45d886c8ba1eb8d1a77e285"
+  version "8.10.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.23.tgz#e5ccfdafff42af5397c29669b6d7d65f7d629a00"
 
 "@types/zen-observable@^0.8.0":
   version "0.8.0"
@@ -1896,8 +1838,8 @@ buffer-fill@^1.0.0:
   resolved "https://registry.yarnpkg.com/buffer-fill/-/buffer-fill-1.0.0.tgz#f8f78b76789888ef39f205cd637f68e702122b2c"
 
 buffer-from@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.0.tgz#87fcaa3a298358e0ade6e442cfce840740d1ad04"
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
 
 buffer-more-ints@0.0.2:
   version "0.0.2"
@@ -2011,8 +1953,8 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000871"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000871.tgz#f1995c1fe31892649a7605957a80c92518423d4d"
+  version "1.0.30000872"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000872.tgz#3f6e53b63d373768bf99e896133d66ef89c49999"
 
 caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30000844:
   version "1.0.30000865"
@@ -2957,10 +2899,11 @@ duplicate-package-checker-webpack-plugin@^3.0.0:
     semver "^5.4.1"
 
 ecc-jsbn@~0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz#3a83a904e54353287874c564b7549386849a98c9"
   dependencies:
     jsbn "~0.1.0"
+    safer-buffer "^2.1.0"
 
 ecstatic@^3.0.0:
   version "3.2.1"
@@ -2994,8 +2937,8 @@ electron-download@^3.0.1:
     sumchecker "^1.2.0"
 
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.30, electron-to-chromium@^1.3.47:
-  version "1.3.52"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.52.tgz#d2d9f1270ba4a3b967b831c40ef71fb4d9ab5ce0"
+  version "1.3.54"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.54.tgz#2121a34b5cd2ba994ad89f8778ea9ae5ebc40cab"
 
 electron@2.0.0:
   version "2.0.0"
@@ -7207,13 +7150,6 @@ react-test-renderer@^16.3.1:
     prop-types "^15.6.0"
     react-is "^16.4.1"
 
-react-tether@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/react-tether/-/react-tether-0.6.1.tgz#de64dd81a5e40053a9f275c4fef0beb0877b3e4e"
-  dependencies:
-    prop-types "^15.5.8"
-    tether "^1.4.3"
-
 react-tether@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-tether/-/react-tether-1.0.1.tgz#6e5173764d4f9b8bef6d1b20ff51972909674942"
@@ -7762,13 +7698,13 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2:
+"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
 sanitize-html@^1.18.2:
-  version "1.18.2"
-  resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-1.18.2.tgz#61877ba5a910327e42880a28803c2fbafa8e4642"
+  version "1.18.3"
+  resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-1.18.3.tgz#d190ecfcdf8c78bd2306c5f370c86b705191e00c"
   dependencies:
     chalk "^2.3.0"
     htmlparser2 "^3.9.0"
@@ -8220,8 +8156,8 @@ stream-browserify@^2.0.1:
     readable-stream "^2.0.2"
 
 stream-each@^1.1.0:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/stream-each/-/stream-each-1.2.2.tgz#8e8c463f91da8991778765873fe4d960d8f616bd"
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/stream-each/-/stream-each-1.2.3.tgz#ebe27a0c389b04fbcc233642952e10731afa9bae"
   dependencies:
     end-of-stream "^1.1.0"
     stream-shift "^1.0.0"
@@ -8585,8 +8521,8 @@ tslib@^1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
 
 tsscmp@~1.0.0:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/tsscmp/-/tsscmp-1.0.5.tgz#7dc4a33af71581ab4337da91d85ca5427ebd9a97"
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/tsscmp/-/tsscmp-1.0.6.tgz#85b99583ac3589ec4bfef825b5000aa911d605eb"
 
 tty-browserify@0.0.0:
   version "0.0.0"
