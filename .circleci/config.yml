@@ -12,6 +12,12 @@ jobs:
           name: Get latest ui-eholdings
           command: yarn upgrade @folio/eholdings
       - run:
+          name: Copy ui-eholdings lockfile
+          command: cp node_modules/@folio/eholdings/yarn.lock yarn.lock
+      - run:
+          name: Re-install dependencies
+          command: yarn install
+      - run:
           name: Build bundle
           command: NODE_ENV=production yarn build
       - run:
